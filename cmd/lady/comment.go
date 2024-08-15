@@ -107,8 +107,8 @@ func commentAction(cc *cli.Context) (err error) {
 }
 
 func demo(messageChan chan csp.Message) {
-	a := csp.NewBeacon(0xA1, "ALICE     ", "fake fake fake fake ")
-	b := csp.NewBeacon(0xB1, "BARTOLOMEO", "fake fake fake fake ")
+	a := csp.NewBeacon(0xA1, "Lisa     ", "fake ")
+	b := csp.NewBeacon(0xB1, "Bart", "fake")
 	time.Sleep(2 * time.Second)
 
 	messageChan <- *a.Message()
