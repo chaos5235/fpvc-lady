@@ -43,7 +43,13 @@ fpvc-lady-darwin-amd64-x.x.x --speak "say -v samantha"
 
 ### Windows
 
-Use PowerShell. You may need to tweak permissions.
+1. Copy fpvc-lady-windows-amd64-X.X.X.exe to a folder of your choice (in this example we will use "D:\FPV-Combat\lady")
+2. Create a shortcut on your Desktop
+   - Target: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noexit "D:\FPV-COMBAT\lady\fpvc-lady-windows-amd64-0.3.0.exe --port COM10 "
+   - Run In: "D:\FPV-COMBAT\lady\"
+3. Modify the --port argument to your reality - check which Com-Port gets created when you plugin your CP2102
+4. You are good to Go! - you can now start the lady by using the shortcut you just created - enable options as described above as you like it.
+
 
 ### Linux
 
