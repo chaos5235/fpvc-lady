@@ -233,7 +233,7 @@ func handleEverySecond() {
 		} else {
 			durationLeft := battleDuration - sinceBattleStart
 			if 0 < durationLeft && durationLeft <= 10*time.Second { // last 10 seconds
-				speaker.Say(fmt.Sprintf("%d.", int(durationLeft.Seconds())), 1)
+				speaker.Say(fmt.Sprintf("%d ", int(durationLeft.Seconds())), 1)
 			} else { // every minute
 				if int(sinceBattleStart.Seconds())%60 == 0 {
 					timeLeft := config.DurationBattle - int(sinceBattleStart.Minutes())
